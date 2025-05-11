@@ -1,0 +1,150 @@
+
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #004aad;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+  background: #e3f2fd;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Intro / Content sections */
+.intro,
+.about-content,
+.news-list,
+.news-detail,
+.contact-form {
+  padding: 40px 20px;
+  background: #ffffff;
+}
+
+.page-title {
+  background: #004aad;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.page-title h2 {
+  font-size: 2rem;
+}
+
+/* News */
+.news-list article {
+  margin-bottom: 20px;
+}
+
+.news-list article h3 a {
+  color: #004aad;
+  text-decoration: none;
+}
+
+.news-list article h3 a:hover {
+  text-decoration: underline;
+}
+
+/* Contact form */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #004aad;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #003b94;
+}
+
+/* Footer */
+footer {
+  background: #f1f1f1;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h2,
+  .page-title h2 {
+    font-size: 1.5rem;
+  }
+}
